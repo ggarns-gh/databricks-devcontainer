@@ -1,5 +1,5 @@
 {
-    "name": "Databricks Local",
+    "name": "Databricks Dev Container",
     "build": {
         "dockerfile": "Dockerfile"
     },
@@ -7,6 +7,7 @@
         "vscode": {
             "extensions": [
                 "ms-azuretools.vscode-docker",
+                "ms-python.black-formatter",
                 "ms-python.python"
             ],
             "settings": {
