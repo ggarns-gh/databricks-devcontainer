@@ -14,8 +14,7 @@ RUN echo "deb [signed-by=/usr/share/keyrings/azul.gpg] https://repos.azul.com/zu
 RUN apt-get update && apt-get install --no-install-recommends -y zulu8-ca-jre
 
 # Install Spark 3.5.0
-COPY spark-3.5.0-bin-hadoop3.tgz spark-3.5.0-bin-hadoop3.tgz
-# RUN curl -O https://archive.apache.org/dist/spark/spark-3.5.0/spark-3.5.0-bin-hadoop3.tgz
+RUN curl -O https://archive.apache.org/dist/spark/spark-3.5.0/spark-3.5.0-bin-hadoop3.tgz
 # TODO: Verify downloaded file https://www.apache.org/info/verification.html
 RUN tar xvf spark-3.5.0-bin-hadoop3.tgz
 RUN mv spark-3.5.0-bin-hadoop3 /opt/spark
