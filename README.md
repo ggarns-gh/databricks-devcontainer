@@ -1,1 +1,1 @@
-# databricks-local
+# Databricks Dev Container
