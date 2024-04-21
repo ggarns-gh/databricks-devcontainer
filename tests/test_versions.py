@@ -10,5 +10,9 @@ def test_python_version_is_310():
     )
 
 
+def test_spark_version_is_350(spark):
+    assert spark.version == "3.5.0"
+
+
 def test_delta_version_is_310():
     assert importlib_metadata.version("delta_spark") == "3.1.0"
